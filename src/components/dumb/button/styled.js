@@ -2,6 +2,19 @@ import styled from 'styled-components';
 
 export const Button = styled.button`
     border: none;
+    border-radius: 9px;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 15px;
+    background-color: #100955;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+`;
+
+export const Link = styled.button`
+    border: none;
     cursor: pointer;
     font-size: 24px;
     margin-right: 15px;

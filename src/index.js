@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { ResetCss } from './ResetCss';
+import { GlobalCss } from './GlobalCss';
 import Layout from './components/layout';
 
 ReactDOM.render(
   <React.StrictMode>
     <Layout />
-    <ResetCss />
+    <GlobalCss />
   </React.StrictMode>,
   document.getElementById('root')
 );

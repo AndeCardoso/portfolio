@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-export const ResetCss = createGlobalStyle`
+export const GlobalCss = createGlobalStyle`
     *,
     ::before,
     ::after {
@@ -13,6 +13,7 @@ export const ResetCss = createGlobalStyle`
     body {
         height: 100%;
         background-color: #2c2c2c;
+        font: 100%/1.5rem 'Work Sans';
     }
 
     a {

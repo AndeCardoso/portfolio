@@ -1,9 +1,17 @@
 import * as S from './styled'
 
-const Button = ({children, to}) => {
+const Link = ({children, to}) => {
     return (
         <a href={to}>
-            <S.Button type="button" >{children}</S.Button>
+            <S.Link type="button" >{children}</S.Link>
+        </a>
+    )
+}
+
+const Button = ({children, to}) => {
+    return (
+        <a href={to} target="_blank" rel="noreferrer" >
+            <S.Button>{children}</S.Button>
         </a>
     )
 }
@@ -16,16 +24,14 @@ const Image = ({path, to, type}) => {
                     <S.Logo src={path} />
                 </a>
             )
-            break;
         case 'Image':
             return (
                 <a href={to}>
                     <S.Image src={path} />
                 </a>
             )
-            break;
         default:
             break;
     }
 }
-export {Button, Image};
+export {Button, Image, Link};
