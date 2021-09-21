@@ -6,10 +6,10 @@ export const Section = styled.section`
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #0f0f0f;
+    background-color: #050505;
 `;
 
-export const Content = styled.div`
+export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
 `;
@@ -30,4 +30,14 @@ export const Title = styled.h2`
     justify-content: center;
     text-align: center;
     font-size: 40px;
+`;
+
+export const Tecnologies = styled.div`
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+`;
+
+export const TecnologiesGroup = styled.div`
+    display: flex;
 `;

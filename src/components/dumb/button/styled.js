@@ -7,8 +7,8 @@ export const Button = styled.button`
     cursor: pointer;
     font-size: 24px;
     margin-right: 15px;
-    background-color: #100955;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #100F55;
     display: flex;
     justify-content: center;
 `;
