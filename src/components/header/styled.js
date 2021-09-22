@@ -10,7 +10,9 @@ export const Header = styled.header`
     background-color: #0b0b0b;
 `;
 
-export const Menu = styled.ul`
+export const Menu = styled.div`
+    display: flex;
+    flex-direction: row;
     color: #ffffff;
 `;
 

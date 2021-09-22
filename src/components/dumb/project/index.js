@@ -1,15 +1,14 @@
 import { Button } from '../button';
-import { AiFillIeCircle } from "react-icons/ai";
 import * as S from './styled'
 
-const Project = ({ title, description, type, tecnologies }) => {
+const Project = ({ title, description, type, tecnologies, icon }) => {
     return (
         <S.Container>
             <S.Title>{title}</S.Title>
             <S.Description>{description}</S.Description>
-            <Button>{type}</Button>
+            <Button>{icon}{type}</Button>
             <S.Tecnologies>
-                {tecnologies}
+                {[tecnologies]}
             </S.Tecnologies>
         </S.Container>
     )
