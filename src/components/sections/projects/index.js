@@ -10,7 +10,7 @@ import { Link } from '../../dumb/button';
 const Projects = () => {
     const svgSize = '50px';
     return (
-        <S.Section>
+        <S.Section id="projects">
             <S.Title><AiFillBulb />Projetos</S.Title>
             <S.Projects>
                 <Project

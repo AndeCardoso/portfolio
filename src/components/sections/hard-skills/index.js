@@ -6,7 +6,7 @@ const HardSkills = () => {
     const svgSize = '150px';
 
     return (
-        <S.Section>
+        <S.Section id="hardskills">
             <S.Container>
                 <S.Title><AiFillCode />Hard Skills</S.Title>
                 <S.Paragraph>

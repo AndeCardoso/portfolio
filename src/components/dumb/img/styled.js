@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import BgProfile from '../../../img/bg-perfil.png';
 
 export const Perfil = styled.img`
-    width: 450px;
-    height: 450px;
+    width: 40%;
+    height: 40%;
     filter: grayscale(10%);
     border-radius: 50%;
     background-image: url('${BgProfile}');
@@ -14,4 +14,8 @@ export const Perfil = styled.img`
 
 export const Logo = styled.img`
     width: 350px;
+`;
+
+export const FooterLogo = styled.img`
+    width: 100px;
 `;

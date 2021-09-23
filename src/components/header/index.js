@@ -10,7 +10,7 @@ const Header = () => {
                 <Link to='#about'>SOBRE</Link>
                 <Link to='#home'>HOME</Link>
                 <Link to='#projects'>PROJETOS</Link>
-                <Link to='#hardskills'>HARD SKILLS</Link>
+                <Link to='#hardskills'>SKILLS</Link>
                 <Link to='#contact'>CONTATO</Link>
             </S.Menu>
         </S.Header>

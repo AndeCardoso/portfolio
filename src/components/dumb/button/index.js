@@ -2,7 +2,7 @@ import * as S from './styled'
 
 const Link = ({children, to}) => {
     return (
-        <S.A href={to}>
+        <S.A href={to} target="_blank" rel="noreferrer">
             <S.Link type="button" >{children}</S.Link>
         </S.A>
     )
@@ -22,6 +22,12 @@ const Image = ({path, to, type}) => {
             return (
                 <S.A href={to}>
                     <S.Logo src={path} />
+                </S.A>
+            )
+        case 'FooterLogo':
+            return (
+                <S.A href={to}>
+                    <S.FooterLogo src={path} />
                 </S.A>
             )
         case 'Image':
