@@ -7,7 +7,6 @@ export const A = styled.a`
 `;
 
 export const Button = styled.button`
-    width: 95%;
     border: none;
     border-radius: 9px;
     padding: 10px 30px;

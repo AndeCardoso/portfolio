@@ -28,6 +28,12 @@ export const CopyTexts = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        margin: 0 5px;
+    }
 `;
 
 export const MadeBy = styled.p`
