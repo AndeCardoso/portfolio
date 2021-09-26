@@ -16,7 +16,7 @@ const Projects = () => {
                 <S.Projects>
                     <Project
                     title="Buscador Github"
-                    description="Buscador de perfis e seus repositorios no Github."
+                    description="Buscador de perfis e seus repositórios no Github."
                     type="Website"
                     to="https://github.com/AndeCardoso/github-seek-profile"
                     icon={<BiLink />}
@@ -24,7 +24,7 @@ const Projects = () => {
                     />
                     <Project
                     title="Agenda FCamara"
-                    description="Agenda para trabalho presencial nos escritorios da empresa."
+                    description="Agenda para trabalho presencial nos escritórios da empresa."
                     type="Projeto"
                     to="https://github.com/AndeCardoso/fcamara-agenda"
                     icon={<DiGitBranch />}
@@ -32,7 +32,7 @@ const Projects = () => {
                     />
                 </S.Projects>
                 <S.MoreRepos>
-                    <Link to="https://github.com/AndeCardoso?tab=repositories"><RiGitRepositoryFill size='30px' />Ver todos os repositórios</Link>
+                    <Link to="https://github.com/AndeCardoso?tab=repositories" target="_blank"><RiGitRepositoryFill size='30px' />Veja todos os projetos</Link>
                 </S.MoreRepos>
             </S.Container>
         </S.Section>

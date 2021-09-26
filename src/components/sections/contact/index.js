@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { SiMinutemailer } from "react-icons/si";
+import { IoIosSend } from "react-icons/io";
 
 import Input from '../../dumb/input';
 import { Submit } from '../../dumb/button';
@@ -40,7 +41,7 @@ const Contact = () => {
                         <option value="propose">Propostas</option>
                     </Select>
                     <S.TextArea placeholder="Digite sua mensagem..." onChange={event => setMessage(event.target.value)}></S.TextArea>
-                    <Submit onClick={handlerContact} >Enviar</Submit>
+                    <Submit onClick={handlerContact} ><IoIosSend />Enviar</Submit>
                 </S.ContactForm>
             </S.Container>
         </S.Section>

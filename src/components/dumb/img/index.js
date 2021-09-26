@@ -1,6 +1,6 @@
 import * as S from './styled'
 
-const Image = ({ type, path, size }) => {
+const Image = ({ type, path }) => {
     switch (type) {
         case 'Perfil':
             return <S.Perfil src={path} />

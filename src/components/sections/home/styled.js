@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import bg from '../../../img/bg-home.png'
 
 export const Section = styled.section`
     width: 100%;
@@ -7,7 +8,10 @@ export const Section = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000000;
+    background-image: url(${bg});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 `;
 
 export const Container = styled.div`
@@ -19,6 +23,9 @@ export const Container = styled.div`
     @media screen and (max-width: 1200px) {
         width: 100%;
         flex-direction: column;
+        img {
+            margin-top: 50px;
+        }
     }
     
     @media screen and (max-width: 376px) {

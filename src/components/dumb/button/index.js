@@ -1,9 +1,9 @@
 import * as S from './styled'
 
-const Link = ({ children, to }) => {
+const Link = ({ children, to, target }) => {
     return(
         <S.Link type="button" >
-            <a href={to} rel="noreferrer">{children}</a>
+            <a href={to} rel="noreferrer" target={target}>{children}</a>
         </S.Link>
     );
 };

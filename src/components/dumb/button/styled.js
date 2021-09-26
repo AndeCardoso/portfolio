@@ -3,18 +3,25 @@ import styled from 'styled-components';
 export const Button = styled.button`
     width: 100%;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 9px;
     padding: 10px 30px;
     font-size: 24px;
-    background-color: #ffffff;
-    color: #000000;
+    color: #ffffff;
     cursor: pointer;
     margin: 15px;
+    background-image: linear-gradient(45deg, rgba(255,0,66,1), rgba(0,0,69,1));
 
     a {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    svg {
+        fill: #000069;
     }
 `;
 

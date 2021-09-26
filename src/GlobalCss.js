@@ -19,4 +19,8 @@ export const GlobalCss = createGlobalStyle`
         color: inherit;
         text-decoration: none;
     }
+
+    svg {
+        fill: rgba(255,0,66,1);
+    }
 `
