@@ -2,17 +2,17 @@ import * as S from './styled'
 
 const Link = ({ children, to }) => {
     return(
-        <S.A href={to} rel="noreferrer">
-            <S.Link type="button" >{children}</S.Link>
-        </S.A>
+        <S.Link type="button" >
+            <a href={to} rel="noreferrer">{children}</a>
+        </S.Link>
     );
 };
 
 const Button = ({ children, to }) => {
     return(
-        <S.A href={to} target="_blank" rel="noreferrer" >
-            <S.Button>{children}</S.Button>
-        </S.A>
+        <S.Button>
+            <a href={to} target="_blank" rel="noreferrer" >{children}</a>
+        </S.Button>  
     );
 };
 
@@ -26,21 +26,21 @@ const Image = ({path, to, type}) => {
     switch(type) {
         case 'Logo':
             return (
-                <S.A href={to}>
+                <a href={to}>
                     <S.Logo src={path} />
-                </S.A>
+                </a>
             )
         case 'FooterLogo':
             return (
-                <S.A href={to}>
+                <a href={to}>
                     <S.FooterLogo src={path} />
-                </S.A>
+                </a>
             )
         case 'Image':
             return (
-                <S.A href={to}>
+                <a href={to}>
                     <S.Image src={path} />
-                </S.A>
+                </a>
             )
         default:
             break;

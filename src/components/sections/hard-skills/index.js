@@ -8,23 +8,25 @@ const HardSkills = () => {
     return (
         <S.Section id="hardskills">
             <S.Container>
-                <S.Title><AiFillCode />Hard Skills</S.Title>
-                <S.Paragraph>
-                    Lorem ipsum dolor sit amet. Quo maiores rerum est quia commodi ea dolores deleniti ut dolorum exercitationem et iste voluptas eum omnis. Eum pariatur recusandae id eveniet quia qui ducimus nihil vel odit nesciunt nam nesciunt voluptatem aut tempore facere eos iste totam. 33 harum dicta quo dolore corrupti ut praesentium natus ut reprehenderit autem.
-                </S.Paragraph>
+                <S.Wrapper>
+                    <S.Title><AiFillCode />Hard Skills</S.Title>
+                    <S.Paragraph>
+                        Lorem ipsum dolor sit amet. Quo maiores rerum est quia commodi ea dolores deleniti ut dolorum exercitationem et iste voluptas eum omnis. Eum pariatur recusandae id eveniet quia qui ducimus nihil vel odit nesciunt nam nesciunt voluptatem aut tempore facere eos iste totam. 33 harum dicta quo dolore corrupti ut praesentium natus ut reprehenderit autem.
+                    </S.Paragraph>
+                </S.Wrapper>
+                <S.Tecnologies>
+                    <S.TecnologiesGroup>
+                        <DiCss3 size={svgSize}/>
+                        <DiHtml5 size={svgSize}/>
+                        <DiJavascript size={svgSize}/>
+                    </S.TecnologiesGroup>
+                    <S.TecnologiesGroup>
+                        <DiReact size={svgSize}/>
+                        <DiNodejsSmall size={svgSize}/>
+                        <DiGitBranch size={svgSize}/>
+                    </S.TecnologiesGroup>
+                </S.Tecnologies>
             </S.Container>
-            <S.Tecnologies>
-                <S.TecnologiesGroup>
-                    <DiCss3 size={svgSize}/>
-                    <DiHtml5 size={svgSize}/>
-                    <DiJavascript size={svgSize}/>
-                </S.TecnologiesGroup>
-                <S.TecnologiesGroup>
-                    <DiReact size={svgSize}/>
-                    <DiNodejsSmall size={svgSize}/>
-                    <DiGitBranch size={svgSize}/>
-                </S.TecnologiesGroup>
-            </S.Tecnologies>
         </S.Section>
     );
 };

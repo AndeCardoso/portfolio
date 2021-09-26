@@ -24,13 +24,13 @@ const Contact = () => {
     };
 
     return (
-        <section>
-            <S.Container id="contact">
+        <S.Section id="contact">
+            <S.Container>
                 <S.Title> <SiMinutemailer />Contato</S.Title>
                 <S.ContactForm>
                     <S.Inputs>
-                        <Input type='text' onChange={event => setName(event.target.value)} placeHolder='Informe seu nome completo ou empresa...' />
-                        <Input type='text' onChange={event => setEmail(event.target.value)} placeHolder='Digite seu e-mail...' />
+                        <Input type='name' onChange={event => setName(event.target.value)} placeHolder='Informe seu nome completo ou empresa...' />
+                        <Input type='email' onChange={event => setEmail(event.target.value)} placeHolder='Informe seu e-mail...' />
                     </S.Inputs>
                     <Select onChange={event => setSubject(event.target.value)}>
                         <option selected disabled>Assunto...</option>
@@ -43,7 +43,7 @@ const Contact = () => {
                     <Submit onClick={handlerContact} >Enviar</Submit>
                 </S.ContactForm>
             </S.Container>
-        </section>
+        </S.Section>
     )
 }
 

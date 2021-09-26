@@ -11,12 +11,12 @@ export const GlobalCss = createGlobalStyle`
     }
 
     body {
-        height: 100%;
-        background-color: #2c2c2c;
+        background-color: #050505;
         font: 100%/1.5rem 'Work Sans';
     }
 
     a {
+        color: inherit;
         text-decoration: none;
     }
 `
