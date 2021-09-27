@@ -13,13 +13,18 @@ export const Button = styled.button`
     cursor: pointer;
     margin: 15px;
     background-image: linear-gradient(45deg, rgba(255,0,66,1), rgba(0,0,69,1));
+    transition: ease-in-out all 0.5s;
 
+    :hover {
+        filter: saturate(150%);
+    }
+    
     a {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
+    
     svg {
         fill: #000069;
     }
@@ -38,6 +43,11 @@ export const Link = styled.button`
     color: #ffffff;
     word-break: keep-all;
     cursor: pointer;
+    transition: ease-in-out all 0.2s;
+
+    :hover {
+        filter: drop-shadow(1px 1px 5px #ff0066);
+    }
 `;
 
 export const Image = styled.img`
@@ -49,10 +59,20 @@ export const Logo = styled.img`
     height: 35px;
     margin: 15px;
     cursor: pointer;
+    transition: ease-in-out all 1s;
+
+    :hover {
+        filter: drop-shadow(3px 3px 10px #ff0066) saturate(180%);
+    }
 `;
 
 export const FooterLogo = styled.img`
     height: 90px;
     margin: 15px;
     cursor: pointer;
+    transition: ease-in-out all 0.8s;
+
+    :hover {
+        filter: drop-shadow(8px 8px 10px #000000) saturate(150%);
+    }
 `;

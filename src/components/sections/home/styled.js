@@ -11,7 +11,7 @@ export const Section = styled.section`
     background-image: url(${bg});
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-position-x: center;
 `;
 
 export const Container = styled.div`
@@ -46,6 +46,7 @@ export const Content = styled.div`
 export const Greeter = styled.span`
     font-size: 50px;
     margin-bottom: 40px;
+    text-shadow:3px 3px 10px #000000, 3px 3px 10px #000000;
 `;
 
 export const MainWrote = styled.h2`
@@ -53,12 +54,15 @@ export const MainWrote = styled.h2`
     margin-bottom: 40px;
     text-align: center;
     line-height: normal;
+    text-shadow:3px 3px 10px #000000, 3px 3px 10px #000000;
 `;
 
 export const Function = styled.p`
     font-size: 25px;
     text-align: left;
     line-height: normal;
+    text-shadow:3px 3px 10px #000000, 3px 3px 10px #000000;
+
     @media screen and (max-width: 1200px) {
         align-items: center;
         text-align: center;
