@@ -27,21 +27,25 @@ export const ContactForm = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    button {
-        margin-left: auto;
-    }
 
     select {
         margin-bottom: 30px;
+    }
+
+    button {
+        margin-left: auto;
     }
 `;
 
 export const Inputs = styled.div`
     display: flex;
     margin-bottom: 30px;
+    justify-content: space-between;
+
     @media screen and (max-width: 768px) {
         flex-direction: column;
         input {
+            width: 100%;
             margin-top: 30px;
         }
     }
@@ -55,4 +59,16 @@ export const TextArea = styled.textarea`
     padding: 10px;
     font-size: 24px;
     resize: vertical;
+    transition: all ease-in-out 0.3s;
+
+    :hover{
+        filter: drop-shadow(3px 3px 10px #fd0066);
+    }
+
+    :focus{
+        background-color: #0a0a0a;
+        border: solid 3px #fd0066;
+        padding: 3px 7px;
+        color: #ffffff;
+    }
 `;

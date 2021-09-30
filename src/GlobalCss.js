@@ -10,6 +10,10 @@ export const GlobalCss = createGlobalStyle`
         box-sizing: border-box;
     }
 
+    html {
+        scroll-behavior: smooth;
+    }
+
     body {
         background-color: #050505;
         font: 100%/1.5rem 'Work Sans';
