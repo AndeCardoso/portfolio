@@ -8,7 +8,6 @@ import Select from '../../dumb/select';
 import { Alert } from '../../dumb/alert';
 
 import api from '../../../services/api';
-import { init, sendForm  } from 'emailjs-com';
 
 import * as S from './styled';
 
@@ -17,7 +16,6 @@ const Contact = () => {
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
-    const [contact, setContact] = useState({});
 
     const [alert, setAlert] = useState({
         type: '',
@@ -39,14 +37,7 @@ const Contact = () => {
     });
     
     const handlerContact = async () => {
-        if(formValidation()) {
-            setContact({
-                name: name,
-                email: email,
-                subject: subject,
-                message: message
-            });
-            
+        if(formValidation()) {            
             generateContactNumber();
 
             const data = {
@@ -129,7 +120,6 @@ const Contact = () => {
                         <option value="propose">Propostas</option>
                     </Select>
                     <S.TextArea placeholder="*Digite sua mensagem..." onChange={event => setMessage(event.target.value)}></S.TextArea>
-                    <input type='hidden' name='contact_number' value={contactNumber} />
                     <Submit onClick={handlerContact} ><IoIosSend />Enviar</Submit>
                 </S.ContactForm>
             </S.Container>
