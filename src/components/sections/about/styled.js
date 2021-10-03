@@ -19,6 +19,10 @@ export const Container = styled.div`
     @media screen and (max-width: 1200px) {
         width: 100%;
         flex-direction: column;
+
+        img {
+            margin-bottom: 30px;
+        }
     }
 `;
 

@@ -16,6 +16,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     @media screen and (max-width: 1200px) {
         width: 100%;
         flex-direction: column;
@@ -48,14 +49,13 @@ export const Title = styled.h2`
 export const Tecnologies = styled.div`
     display: flex;
     flex-direction: column;
+    
     @media screen and (max-width: 560px) {
-        width: 250px;
+        width: 100%;
     }
 `;
 
 export const TecnologiesGroup = styled.div`
     display: flex;
-    @media screen and (max-width: 321px) {
-        width: 250px;
-    }
+
 `;

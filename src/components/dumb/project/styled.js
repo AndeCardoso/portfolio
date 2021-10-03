@@ -12,6 +12,13 @@ export const Container = styled.div`
     border-radius: 10px;
     margin: 10px;
     padding: 0 15px;
+    transition: ease-in-out all 1s;
+
+    :hover {
+        filter: drop-shadow(8px 8px 10px #000000) brightness(180%);
+        width: 109%;
+        height: 320px;
+    }
 `;
 
 export const Title = styled.h3`

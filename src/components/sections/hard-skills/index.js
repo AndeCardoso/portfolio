@@ -16,14 +16,14 @@ const HardSkills = () => {
                 </S.Wrapper>
                 <S.Tecnologies>
                     <S.TecnologiesGroup>
-                        <DiCss3 size={svgSize}/>
-                        <DiHtml5 size={svgSize}/>
-                        <DiJavascript size={svgSize}/>
+                        <DiCss3 size={svgSize} className='tecnologie'/>
+                        <DiHtml5 size={svgSize} className='tecnologie'/>
+                        <DiJavascript size={svgSize} className='tecnologie'/>
                     </S.TecnologiesGroup>
                     <S.TecnologiesGroup>
-                        <DiReact size={svgSize}/>
-                        <DiNodejsSmall size={svgSize}/>
-                        <DiGitBranch size={svgSize}/>
+                        <DiReact size={svgSize} className='tecnologie'/>
+                        <DiNodejsSmall size={svgSize} className='tecnologie'/>
+                        <DiGitBranch size={svgSize} className='tecnologie'/>
                     </S.TecnologiesGroup>
                 </S.Tecnologies>
             </S.Container>

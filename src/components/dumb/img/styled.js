@@ -17,10 +17,20 @@ export const Perfil = styled.img`
 
     @media screen and (max-width: 1200px) {
         width: 50%;
+        
+        :hover {
+            filter: drop-shadow(8px 8px 10px #000000) sepia(50%);
+            width: 52%;
+        }
     }
     
     @media screen and (max-width: 426px) {
         width: 100%;
+
+        :hover {
+            filter: drop-shadow(8px 8px 10px #000000) sepia(50%);
+            width: 102%;
+        }
     }
 `;
 

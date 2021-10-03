@@ -15,6 +15,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     @media (max-width: 1200px) {
         width: 100%;
     }
@@ -24,6 +25,7 @@ export const Menu = styled.nav`
     display: flex;
     flex-direction: row;
     color: #ffffff;
+    
     @media screen and (max-width: 768px) {
         display: none;
     }
