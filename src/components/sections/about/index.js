@@ -13,7 +13,14 @@ const About = () => {
                 <S.Content>
                     <S.Title><AiFillMessage />Sobre</S.Title>
                     <S.Paragraph>
-                        Lorem ipsum dolor sit amet. Quo maiores rerum est quia commodi ea dolores deleniti ut dolorum exercitationem et iste voluptas eum omnis. Eum pariatur recusandae id eveniet quia qui ducimus nihil vel odit nesciunt nam nesciunt voluptatem aut tempore facere eos iste totam. 33 harum dicta quo dolore corrupti ut praesentium natus ut reprehenderit autem.
+                    {/* Desenvolvedor Front-End por natureza, mas nunca esquecendo da necessidade incontestável do Back-End, busco o aprendizado
+                    constante para que sempre tenha as melhores formas de resolver os problemas que chegarem. */}
+                    Estudo programação desde muito jovem, e no final do ensino médio pude ingressar na faculdade de Análise e Desenvolvimento de Sistemas
+                    pela ULBRA/Torres, onde pude conhecer as inumeras vertentes dessa área, mas logo me apaixonando pelo Front-End, este que me propus em
+                    focar.
+                    <br />
+                    Atualmente voltando aos estudos de programação, após um hiato de 4 anos, escolhi a stack de JavaScript como alicerce, porem sempre
+                    estarei disposto a aprender novas tecnologias, linguagens e frameworks, porque pra mim a liberdade do intelecto esta nos estudos.
                     </S.Paragraph>
                     <S.Buttons>
                         <Button to="https://www.linkedin.com/in/anderson-cardoso-781b56102/" ><AiFillLinkedin />Linkedin</Button>

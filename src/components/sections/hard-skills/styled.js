@@ -36,6 +36,10 @@ export const Paragraph = styled.p`
     width: 100%;
     padding: 30px;
     text-align: justify;
+
+    span {
+        font-style: italic;
+    }
 `;
 
 export const Title = styled.h2`
@@ -50,6 +54,11 @@ export const Tecnologies = styled.div`
     display: flex;
     flex-direction: column;
     
+    svg:hover {
+        transition: all ease-in-out 0.5s;
+        filter: brightness(140%);
+    }
+
     @media screen and (max-width: 560px) {
         width: 100%;
     }

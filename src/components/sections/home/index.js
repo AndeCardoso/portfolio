@@ -8,8 +8,8 @@ const Home = () => {
             <S.Container id="home">
                 <S.Content>
                     <S.Greeter>SALVE!</S.Greeter>
-                    <S.MainWrote>Aqui é o Anderson Cardoso</S.MainWrote>
-                    <S.Function>Desenvolvedor Full-Stack JavaScript</S.Function>
+                    <S.MainWrote>Eu sou o Anderson Cardoso</S.MainWrote>
+                    <S.Function>Desenvolvedor Front-End JavaScript</S.Function>
                 </S.Content>
                 <Image path={Logo} type='Logo'/>
             </S.Container>
