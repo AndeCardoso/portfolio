@@ -7,7 +7,7 @@ export const Button = styled.button`
     justify-content: center;
     align-items: center;
     border-radius: 9px;
-    padding: 10px 30px;
+    padding: 10px 0;
     font-size: 24px;
     color: #ffffff;
     cursor: pointer;
@@ -20,6 +20,7 @@ export const Button = styled.button`
     }
     
     a {
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
