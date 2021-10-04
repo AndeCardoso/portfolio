@@ -12,7 +12,7 @@ const HardSkills = () => {
                 <S.Wrapper>
                     <S.Title><AiFillCode />Hard Skills</S.Title>
                     <S.Paragraph>
-                    Focado inicialmente em Front-End, busco estar sempre aprimorar e descobrir novas tecnologias para encontrar as melhores formas de 
+                    Focado inicialmente em Front-End, busco sempre aprimorar e descobrir novas tecnologias para encontrar as melhores formas de 
                     resolver os problemas que acabam surgindo dentro dos projetos.
                     Detesto me prender algo antigo como uma desculpa de que "sempre funcionou", pois novos problemas exigem novas soluções, e o constante 
                     estudo sempre será o principal pilar da programação.
