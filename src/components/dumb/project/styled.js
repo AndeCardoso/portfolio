@@ -15,7 +15,6 @@ export const Container = styled.div`
     transition: ease-in-out all 1s;
 
     :hover {
-        filter: drop-shadow(8px 8px 10px #000000) brightness(180%);
         width: 109%;
         height: 320px;
     }
