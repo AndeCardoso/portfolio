@@ -16,7 +16,7 @@ export const Button = styled.button`
     transition: ease-in-out all 0.5s;
 
     :hover {
-        filter: saturate(150%);
+        filter: brightness(150%);
     }
     
     a {
@@ -28,6 +28,7 @@ export const Button = styled.button`
     
     svg {
         fill: #000069;
+        filter: blur(110%);
     }
 `;
 
@@ -60,10 +61,11 @@ export const Logo = styled.img`
     height: 35px;
     margin: 15px;
     cursor: pointer;
+    filter: brightness(180%);
     transition: ease-in-out all 1s;
 
     :hover {
-        filter: drop-shadow(3px 3px 10px #ff0066) saturate(180%);
+        filter: brightness(180%) saturate(180%);
     }
 `;
 
