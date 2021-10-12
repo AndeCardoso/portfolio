@@ -27,7 +27,7 @@ export const Button = styled.button`
     }
     
     svg {
-        fill: #000069;
+        fill: #ffffff;
         filter: blur(110%);
     }
 `;
