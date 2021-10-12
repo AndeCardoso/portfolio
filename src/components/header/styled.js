@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Image } from '../dumb/button/styled';
 
 export const Header = styled.header`
-    height: 10vh;
+    height: 100px;
     width: 100%;
     display: flex;
     justify-content: center;
