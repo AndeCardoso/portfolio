@@ -46,10 +46,6 @@ export const CopyTexts = styled.div`
     flex-direction: column;
     align-items: center;
 
-    svg{
-        fill: #ffffff;
-    }
-
     a {
         text-decoration: none;
         color: #000069;

@@ -4,8 +4,8 @@ import * as S from './styled'
 
 const Home = () => {
     return (
-        <S.Section>
-            <S.Container id="home">
+        <S.Section id="home">
+            <S.Container >
                 <S.Content>
                     <S.Greeter>SALVE!</S.Greeter>
                     <S.MainWrote>Eu sou o Anderson Cardoso</S.MainWrote>

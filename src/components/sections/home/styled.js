@@ -3,8 +3,8 @@ import bg from '../../../img/bg-home.png'
 
 export const Section = styled.section`
     width: 100%;
-    height: 100%;
-    padding: 100px 30px;
+    height: 90vh;
+    padding: 100px 0 30px;
     display: flex;
     justify-content: center;
     align-items: center;
