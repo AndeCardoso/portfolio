@@ -3,7 +3,8 @@ import bg from '../../../img/bg-home.png'
 
 export const Section = styled.section`
     width: 100%;
-    height: 90vh;
+    height: 100%;
+    min-height: 90vh;
     padding: 100px 0 30px;
     display: flex;
     justify-content: center;
@@ -15,6 +16,7 @@ export const Section = styled.section`
 
     @media screen and (max-width: 425px) {
         padding: 140px 0 30px;
+        height: 100%;
     }
 `;
 
@@ -26,6 +28,7 @@ export const Container = styled.div`
 
     @media screen and (max-width: 1200px) {
         width: 100%;
+        height: 100%;
         flex-direction: column;
         img {
             margin-top: 30px;
@@ -37,7 +40,7 @@ export const Container = styled.div`
             width: 80%;
             margin-top: 50px;
         }
-        
+
         img:hover {
             filter: drop-shadow(8px 8px 10px #000000) brightness(180%);
             width: 85%;
