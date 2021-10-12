@@ -12,6 +12,10 @@ export const Section = styled.section`
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
+
+    @media screen and (max-width: 425px) {
+        padding: 140px 0 30px;
+    }
 `;
 
 export const Container = styled.div`
@@ -24,13 +28,19 @@ export const Container = styled.div`
         width: 100%;
         flex-direction: column;
         img {
-            margin-top: 50px;
+            margin-top: 30px;
         }
     }
     
-    @media screen and (max-width: 376px) {
+    @media screen and (max-width: 426px) {
         img {
-            width: 100%;
+            width: 80%;
+            margin-top: 50px;
+        }
+        
+        img:hover {
+            filter: drop-shadow(8px 8px 10px #000000) brightness(180%);
+            width: 85%;
         }
     }
 `;

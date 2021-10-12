@@ -43,6 +43,11 @@ export const Logo = styled.img`
         filter: drop-shadow(8px 8px 10px #000000) brightness(180%);
         width: 370px;
     }
+
+    @media screen and (max-width: 425px) {
+        filter: drop-shadow(8px 8px 10px #000000) brightness(180%);
+        width: 320px;
+    }
 `;
 
 export const FooterLogo = styled.img`
