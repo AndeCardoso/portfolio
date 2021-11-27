@@ -1,5 +1,3 @@
-# Meu portfolio desenvolvido em React JS
-
 <h1 align="center">Landing Page de informações para retorno dos trabalhos presenciais do Grupo FCamara :orange: :orange_heart:</h1>
 <p align="center">
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
