@@ -18,7 +18,7 @@ const Projects = () => {
                     title="Buscador Github"
                     description="Buscador de perfis e seus repositórios no Github."
                     type="Website"
-                    to="https://github.com/AndeCardoso/github-seek-profile"
+                    to="https://github-seek-profile.vercel.app/"
                     icon={<BiLink />}
                     tecnologies={[ <DiReact size={svgSize} />, <DiHtml5 size={svgSize}/>, <SiStyledComponents size={svgSize}/>, <DiJavascript size={svgSize}/> ]}
                     />
