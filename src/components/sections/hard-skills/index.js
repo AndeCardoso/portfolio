@@ -26,7 +26,7 @@ const HardSkills = () => {
                     <span>"Jamais considere seus estudos como uma obrigação, mas sim como uma oportunidade invejável para aprender o desconhecido..."</span> <br />
                     - Albert Einstein
                     </S.Paragraph>
-                    <Button to="https://github.com/AndeCardoso" ><IoDocumentTextSharp />Curriculo</Button>
+                    <Button to="https://drive.google.com/file/d/1oF-QhQtnXw1BMp50gil5QJEJeYIq8AM6/view?usp=sharing" ><IoDocumentTextSharp />Curriculo</Button>
                 </S.Wrapper>
                 <S.Technologies>
                     <S.TechnologiesGroup>
