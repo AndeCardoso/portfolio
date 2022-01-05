@@ -15,7 +15,7 @@ React JS
 ## Dependencies
 
 ```sh
-axios, emailjs-com, styled-components, react-icons
+axios, emailjs-com, styled-components, react-icons, react-alerts
 ```
 
 ## Install
