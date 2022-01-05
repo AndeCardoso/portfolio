@@ -8,25 +8,33 @@ const Menu = ({ open }) => {
 
   return (
     <S.Menu open={open}>
+      <a href='https://drive.google.com/file/d/1oF-QhQtnXw1BMp50gil5QJEJeYIq8AM6/view?usp=sharing' target='_blank' rel='noreferrer'>
+        CURRICULO
+      </a>
       <a href="#home">
-        <span role="img" aria-label="about us" onClick={close}></span>
-        HOME
+        <span aria-label="home" onClick={close}>
+          HOME
+        </span>
       </a>
       <a href="#about">
-        <span role="img" aria-label="price" onClick={close}></span>
-        SOBRE
+        <span aria-label="about" onClick={close}>
+          SOBRE
+        </span>
       </a>
       <a href="#hardskills">
-        <span role="img" aria-label="contact" onClick={close}></span>
-        SKILLS
+        <span aria-label="skills" onClick={close}>
+          SKILLS
+        </span>
       </a>
       <a href="#projects">
-        <span role="img" aria-label="contact" onClick={close}></span>
-        PROJETOS
+        <span aria-label="projects" onClick={close}>
+          PROJETOS
+        </span>
       </a>
       <a href="#contact">
-        <span role="img" aria-label="contact" onClick={close}></span>
-        CONTATOS
+        <span aria-label="contact" onClick={close}>
+          CONTATO
+        </span>
       </a>
     </S.Menu>
   )

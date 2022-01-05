@@ -7,9 +7,9 @@ const Home = () => {
         <S.Section id="home">
             <S.Container >
                 <S.Content>
-                    <S.Greeter>SALVE!</S.Greeter>
-                    <S.MainWrote>Eu sou o Anderson Cardoso</S.MainWrote>
-                    <S.Function>Desenvolvedor Front-End JavaScript</S.Function>
+                    <S.Greeter>Olá!</S.Greeter>
+                    <S.MainWrote>Meu nome é Anderson Cardoso</S.MainWrote>
+                    <S.Function>Sou desenvolvedor FullStack JavaScript</S.Function>
                 </S.Content>
                 <Image path={Logo} type='Logo'/>
             </S.Container>

@@ -4,7 +4,7 @@ export const Menu = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #000069;
+  background: #0B0B0B;
   height: 100%;
   text-align: left;
   padding: 2rem;
@@ -13,7 +13,7 @@ export const Menu = styled.nav`
   right: 0;
   transition: all ease-in-out 0.6s;
   transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(+100%)'};
-  z-index: 9;
+  z-index: -1;
 
   a {
     font-size: 2rem;

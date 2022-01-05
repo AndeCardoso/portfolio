@@ -8,7 +8,6 @@ export const Section = styled.section`
     align-items: center;
     justify-content: space-around;
     background-color: #050505;
-
 `;
 
 export const Container = styled.div`
@@ -24,7 +23,9 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
+    display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
 `;
 
@@ -50,7 +51,7 @@ export const Title = styled.h2`
     font-size: 40px;
 `;
 
-export const Tecnologies = styled.div`
+export const Technologies = styled.div`
     display: flex;
     flex-direction: column;
     
@@ -64,7 +65,12 @@ export const Tecnologies = styled.div`
     }
 `;
 
-export const TecnologiesGroup = styled.div`
+export const TechnologiesGroup = styled.div`
     display: flex;
+    align-items: center;
+    justify-content: center;
 
+    @media screen and (max-width: 426px) {
+        flex-wrap: wrap;
+    }
 `;
