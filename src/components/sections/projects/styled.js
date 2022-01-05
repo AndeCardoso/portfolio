@@ -30,9 +30,31 @@ export const Title = styled.h2`
 export const Projects = styled.div`
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
+
+    .top {
+        width: 100%;
+        display: flex;
+    }
+    
+    .bottom {
+        width: 100%;
+        display: flex;        
+    }
+
     @media screen and (max-width: 1000px) {
         flex-direction: column;
+
+        .top {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .bottom {
+            display: flex;
+            flex-direction: column;
+        }
     }
 `;
 

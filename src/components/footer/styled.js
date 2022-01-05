@@ -54,16 +54,24 @@ export const CopyTexts = styled.div`
     }
 `;
 
-export const MadeBy = styled.span`
+export const MadeBy = styled.p`
     display: flex;
-    align-items: center;
+    text-align: center;
+
+    .name {
+        margin: 0 5px;
+    }
+    
+    a {
+        margin: 0;
+    }
 
     svg {
         margin-left: 5px;
         fill: #000069;
     }
 
-    @media screen and (max-width: 321px) {
+    @media screen and (max-width: 500px) {
         flex-direction: column;
     }
 `;

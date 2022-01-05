@@ -1,11 +1,11 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { SiMinutemailer } from "react-icons/si";
 import { IoIosSend } from "react-icons/io";
+import { useAlert } from 'react-alert'; 
 
 import Input from '../../dumb/input';
 import { Submit } from '../../dumb/button';
 import Select from '../../dumb/select';
-import { Alert } from '../../dumb/alert';
 
 import api from '../../../services/api';
 
@@ -17,29 +17,12 @@ const Contact = () => {
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
 
-    const [alert, setAlert] = useState({
-        type: '',
-        msg: ''
-    });
+    const alert = useAlert();
 
-    const [contactNumber, setContactNumber] = useState("000000");
-  
-    const generateContactNumber = () => {
-        const numStr = "000000" + (Math.random() * 1000000 | 0);
-        setContactNumber(numStr.substring(numStr.length - 6));
-    }
-
-
-    useEffect(() => {
-        const timer = setTimeout(() => setAlert({})
-        , 3000);
-        return () => clearTimeout(timer);
-    });
-    
     const handlerContact = async () => {
         if(formValidation()) {            
-            generateContactNumber();
-
+            const numStr = "000000" + (Math.random() * 1000000 | 0);
+            const contactNumber = numStr.substring(numStr.length - 6);
             const data = {
                 service_id: 'service_4696ire',
                 template_id: 'template_lrbjoki',
@@ -56,46 +39,46 @@ const Contact = () => {
             await api.post('/v1.0/email/send', data)
             .then((response) => {
                 console.log(response)
-                setAlert({
-                    type: 'sucess',
-                    msg: 'Muito obrigado pelo seu contato, sua mensagem terá toda a atenção possível :D'
-                })                
+                alert.show(
+                    'Muito obrigado pelo seu contato, sua mensagem terá toda a atenção possível :D',
+                    {type: 'success'}
+                ); 
             }).catch(() => {
-                setAlert({
-                    type: 'error',
-                    msg: 'Algo inesperado aconteceu, por favor tente novamente mais tarde!'
-                });
+                alert.show(
+                    'Algo inesperado aconteceu, por favor tente novamente mais tarde!',
+                    {type: 'error'}
+                );
             });
         }
     };
 
     const formValidation = () => {
         if(name === '' || email === '' || message === '') {
-            setAlert({
-                type: 'error',
-                msg: 'Preencha todos os campos, por favor :)'
-            });
+            alert.show(
+                'Preencha todos os campos, por favor :)',
+                {type: 'error'}
+            );
             return false;
         } else {
             if(name.length < 2) {
-                setAlert({
-                    type: 'error',
-                    msg: 'O nome precisa ter ao menos 2 caracteres!'
-                })
+                alert.show(
+                    'O nome precisa ter ao menos 2 caracteres!',
+                    {type: 'error'}
+                );
                 return false;
 
             } else if(!email.includes("@") || !email.includes(".")) {
-                setAlert({
-                    type: 'error',
-                    msg: 'Informe um e-mail válido, por favor :)'
-                })
+                alert.show(
+                    'Informe um e-mail válido, por favor :)',
+                    {type: 'error'}
+                );
                 return false;
 
             } else if(message.length < 5) {
-                setAlert({
-                    type: 'error',
-                    msg: 'Seja um pouco mais específico em sua mensagem, por favor :)'
-                })
+                alert.show(
+                    'Seja um pouco mais específico em sua mensagem, por favor :)',
+                    {type: 'error'}
+                );
                 return false;
             }
             return true;
@@ -105,15 +88,13 @@ const Contact = () => {
     return (
         <S.Section id="contact">
             <S.Container>
-                <Alert type={alert.type}>{alert.msg}</Alert>
                 <S.Title> <SiMinutemailer />Contato</S.Title>
                 <S.ContactForm>
                     <S.Inputs>
                         <Input type='name' onChange={event => setName(event.target.value)} placeHolder='*Informe seu nome completo ou empresa...' />
                         <Input type='email' onChange={event => setEmail(event.target.value)} placeHolder='*Informe seu e-mail...' />
                     </S.Inputs>
-                    <Select onChange={event => setSubject(event.target.value)}>
-                        <option selected disabled>Assunto...</option>
+                    <Select defaultValue="0" onChange={event => setSubject(event.target.value)}>
                         <option value="information">Informações</option>
                         <option value="budget">Orçamentos</option>
                         <option value="feedbacks">Feedbacks</option>

@@ -52,12 +52,13 @@ export const Content = styled.div`
     display: flex;
     flex-direction: column;
     @media screen and (max-width: 1200px) {
+        margin-top: 30px;
         align-items: center;
     }
 `;
 
 export const Greeter = styled.span`
-    font-size: 50px;
+    font-size: 60px;
     margin-bottom: 40px;
     text-shadow:3px 3px 10px #000000, 3px 3px 10px #000000;
 `;

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Image } from '../dumb/button/styled';
 
 export const Header = styled.header`
     height: 100px;
@@ -31,8 +30,4 @@ export const Menu = styled.nav`
     @media screen and (max-width: 768px) {
         display: none;
     }
-`;
-
-export const LogoButton = styled(Image)`
-    margin-left: 15px;
 `;

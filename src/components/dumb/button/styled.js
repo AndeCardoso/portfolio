@@ -10,9 +10,9 @@ export const Button = styled.button`
     padding: 10px 0;
     font-size: 24px;
     color: #ffffff;
-    cursor: pointer;
     margin: 15px;
     background-image: linear-gradient(45deg, rgba(255,0,66,1), rgba(0,0,69,1));
+    cursor: pointer;
     transition: ease-in-out all 0.5s;
 
     :hover {
@@ -35,7 +35,6 @@ export const Button = styled.button`
 export const Link = styled.button`
     width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     border: none;
@@ -46,9 +45,21 @@ export const Link = styled.button`
     word-break: keep-all;
     cursor: pointer;
     transition: ease-in-out all 0.2s;
-
+    
     :hover {
         filter: drop-shadow(1px 1px 5px #ff0066);
+    }
+
+    a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            fill: #ffffff;
+            margin-left: 5px;
+        }
     }
 `;
 
@@ -70,7 +81,7 @@ export const Logo = styled.img`
 `;
 
 export const FooterLogo = styled.img`
-    height: 90px;
+    height: 50px;
     margin: 15px;
     cursor: pointer;
     transition: ease-in-out all 0.8s;

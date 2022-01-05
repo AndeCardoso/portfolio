@@ -1,10 +1,15 @@
-import * as S from './styled';
 import { AiFillCode } from "react-icons/ai";
-import { DiCss3, DiJavascript, DiHtml5, DiReact, DiGitBranch } from "react-icons/di";
-import { SiStyledComponents } from "react-icons/si";
+import { DiCss3, DiHtml5, DiReact, DiGitBranch, DiNodejsSmall } from "react-icons/di";
+import { SiStyledComponents, SiMongodb } from "react-icons/si";
+import { DiJavascript1 } from "react-icons/di";
+import { IoDocumentTextSharp } from "react-icons/io5";
+
+import { Button } from '../../dumb/button';
+
+import * as S from './styled';
 
 const HardSkills = () => {
-    const svgSize = '150px';
+    const SVG_SIZE = '150px';
 
     return (
         <S.Section id="hardskills">
@@ -21,19 +26,22 @@ const HardSkills = () => {
                     <span>"Jamais considere seus estudos como uma obrigação, mas sim como uma oportunidade invejável para aprender o desconhecido..."</span> <br />
                     - Albert Einstein
                     </S.Paragraph>
+                    <Button to="https://github.com/AndeCardoso" ><IoDocumentTextSharp />Curriculo</Button>
                 </S.Wrapper>
-                <S.Tecnologies>
-                    <S.TecnologiesGroup>
-                        <DiHtml5 size={svgSize} className='tecnologie'/>
-                        <DiCss3 size={svgSize} className='tecnologie'/>
-                        <DiJavascript size={svgSize} className='tecnologie'/>
-                    </S.TecnologiesGroup>
-                    <S.TecnologiesGroup>
-                        <DiReact size={svgSize} className='tecnologie'/>
-                        <SiStyledComponents size={svgSize} className='tecnologie'/>
-                        <DiGitBranch size={svgSize} className='tecnologie'/>
-                    </S.TecnologiesGroup>
-                </S.Tecnologies>
+                <S.Technologies>
+                    <S.TechnologiesGroup>
+                        <DiHtml5 size={SVG_SIZE}/>
+                        <DiCss3 size={SVG_SIZE}/>
+                        <DiReact size={SVG_SIZE}/>
+                        <DiNodejsSmall size={SVG_SIZE}/>
+                    </S.TechnologiesGroup>
+                    <S.TechnologiesGroup>
+                        <DiJavascript1 size={SVG_SIZE}/>
+                        <SiStyledComponents size={SVG_SIZE}/>
+                        <DiGitBranch size={SVG_SIZE}/>
+                        <SiMongodb size={SVG_SIZE}/>
+                    </S.TechnologiesGroup>
+                </S.Technologies>
             </S.Container>
         </S.Section>
     );
